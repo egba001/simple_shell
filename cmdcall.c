@@ -3,7 +3,8 @@
 /**
  * checkpath - checks the path
  * @av: arguments
- * @av: arguments
+ * Description: checks the path
+ * Return: 1
  */
 int checkpath(char *av[])
 {
