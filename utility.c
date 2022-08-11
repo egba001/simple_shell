@@ -3,7 +3,7 @@
 /**
  * linecount - count lines
  *
- * linecount - count lines
+ * @increment: icnrementer
  *
  * Return: count
  */
