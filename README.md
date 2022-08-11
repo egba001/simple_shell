@@ -45,37 +45,7 @@ It is created using the C programming Language and it can do many functionalitie
 
 ## Files description
 
-- AUTHORS -> List of contributors to this repository
-- man_1_simple_shell -> Manual page for the simple_shell
-- shell.h -> Header file
-- shell.c -> main function
-   - sig_handler -> handles the Ctrl + C signal
-   - _EOF -> handles the End Of File condition
-- string.c
-   - _putchar -> prints a character
-   - _puts -> prints a string
-   - _strlen -> gives the length of a string
-   - _strdup -> copies a string in a newly allocated memory
-   - concat_all -> concatenates 3 strings in a newly allocated memory
-- line_exec.c
-   - splitstring -> splits a string into an array of words
-   - execute -> executes a command using execve
-   - realloc -> reallocates a memory block
-   - freearv -> frees a 2 dimensional array
-- linkpath.c
-   - _getenv -> returns the value of a global variable
-   - add_node_end -> adds a node in a singly linked list
-   - linkpath -> creates a singly linked list for PATH directories
-   - _which -> finds the pathname of a command
-   - free_list -> frees the linked list of PATH value
-- checkbuild.c
-   - checkbuild -> checks if a command is a build-in command
-- buildin.c
-   - exitt -> handles the exit buildin command
-   - _atoi -> converts a string into an integer
-   - env -> prints the current environment
-   - _setenv -> Initialize a new global variable, or modify an existing one
-   - _unsetenv -> remove a global variable
+This is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh). Additional functions are also included. This program is been written entirely in C as a milestone project for Alx School.
 
 ## List of allowed functions and system calls for this project
 
@@ -117,7 +87,7 @@ It is created using the C programming Language and it can do many functionalitie
 Clone our repository using this command, (you need to have git installed on your machine first)
 
 ```bash
-  git clone https://github.com/tecnophille/simple_shell
+  git clone https://github.com/egba001/simple_shell
 ```
 
 Change directory to simple_shell:
@@ -153,27 +123,7 @@ exit
 
 
 ```bash
-ubunto@ubuntu:~/OS/simple_shell$ gcc -Wall -Wextra -Werror -pedantic *.c -o hsh
-ubunto@ubuntu:~/OS/simple_shell$ ./hsh
-#cisfun$ echo Hello, This is an example
-Hello, This is an example
-#cisfun$ ls
-README.md  checkbuild.c  line_exec.c  shell.c  string.c
-buildin.c  hsh		 linkpath.c   shell.h
-#cisfun$ ^C
-#cisfun$ ls -l
-total 52
--rw-r--r-- 1 ubunto ubunto  3067 Aug 9 04:22 README.md
--rw-r--r-- 1 ubunto ubunto  2183 Aug 9 16:17 buildin.c
--rw-r--r-- 1 ubunto ubunto   574 Aug 9 15:59 checkbuild.c
--rwxr-xr-x 1 ubunto ubunto 18144 Aug 9 04:22 hsh
--rw-r--r-- 1 ubunto ubunto  2091 Aug 9 14:49 line_exec.c
--rw-r--r-- 1 ubunto ubunto  199 Aug 9 14:30 linkpath.c
--rw-r--r-- 1 ubunto ubunto   951 Aug 9 16:09 shell.c
--rw-r--r-- 1 ubunto ubunto  1351 Aug 9 15:58 shell.h
--rw-r--r-- 1 ubunto ubunto  1727 Aug 9 14:30 string.c
-#cisfun$ exit
-ubunto@ubuntu:~/OS/simple_shell$
+After compilation, the resulting program can run stand-alone, either in interactive or non-interactive mode.
 ```
     
 ## Bugs
