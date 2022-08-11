@@ -185,6 +185,7 @@ int aliascmd(char *av[])
 			{
 				fprintstrs(1, name, "='", val, "'\n", NULL);
 				free(val);
+
 			}
 		}
 	}
